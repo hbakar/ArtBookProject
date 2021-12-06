@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(getData), name: NSNotification.Name("newData"), object: nil)
+        
+        print("en son ekledik")
     }
     
 
